@@ -1,2 +1,5 @@
-# SchoolProject2023
-Упрощенная версия игры "Тетрис".
+<div align="center">
+    <h1>Tetris</h1>
+    <p>...</p>
+</div>
+
