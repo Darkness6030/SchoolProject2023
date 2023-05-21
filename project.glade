@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkImage" id="exit_image">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="margin-end">8</property>
+    <property name="icon-name">application-exit-rtl-symbolic</property>
+  </object>
+  <object class="GtkImage" id="pause_image">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="margin-end">8</property>
+    <property name="icon-name">media-playback-start-symbolic</property>
+  </object>
+  <object class="GtkImage" id="reset-image">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="margin-end">8</property>
+    <property name="icon-name">media-playlist-repeat-symbolic</property>
+  </object>
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="events">GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK | GDK_KEY_PRESS_MASK | GDK_KEY_RELEASE_MASK | GDK_STRUCTURE_MASK</property>
+    <property name="title" translatable="yes">Game</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkBox" id="button_box">
+            <property name="width-request">420</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkButton" id="reset_button">
+                <property name="label">Reset</property>
+                <property name="width-request">124</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-markup">Reset the current progress</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">6</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="image">reset-image</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="pause_button">
+                <property name="label">Pause</property>
+                <property name="width-request">124</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-markup">Pause the game</property>
+                <property name="margin-start">6</property>
+                <property name="margin-end">6</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="image">pause_image</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="exit_button">
+                <property name="label">Exit</property>
+                <property name="width-request">124</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-markup">Exit the game</property>
+                <property name="margin-start">6</property>
+                <property name="margin-end">12</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="image">exit_image</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="y">782</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="score_label">
+            <property name="width-request">124</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Score: 0</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">12</property>
+            <property name="y">730</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pause_label">
+            <property name="width-request">260</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Game Paused</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+              <attribute name="gravity" value="east"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">160</property>
+            <property name="y">730</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
