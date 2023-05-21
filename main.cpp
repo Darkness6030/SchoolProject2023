@@ -431,17 +431,17 @@ public:
 
             switch(event->keyval) {
                 // move left
-                case GDK_KEY_a:
+                case 1734: case GDK_KEY_a:
                     area.move_x(-1);
                     break;
 
                 // move right
-                case GDK_KEY_d:
+                case 1751: case GDK_KEY_d:
                     area.move_x(1);
                     break;
 
                 // rotate
-                case GDK_KEY_s:
+                case 1753: case GDK_KEY_s:
                     area.rotate();
                     break;
             }
